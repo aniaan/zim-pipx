@@ -1,3 +1,5 @@
+[[ -d ${HOME}/.local/bin ]] && path=(${HOME}/.local/bin ${path:#${HOME}/.local/bin})
+
 (( ${+commands[pipx]} )) && () {
   local command=${commands[pipx]}
   local compfile="$1/functions/_pipx"
